@@ -1,6 +1,6 @@
 body {
   flex-direction: column;
-  background-color: #dce4e6;
+  background-color: #fff;
   height: 100vh;
 }
 
@@ -13,7 +13,10 @@ body {
 .wrapper {
   flex-direction: row;
   flex-wrap: wrap;
-  max-width: 640px;
+  position: absolute;
+  top: 0;
+  max-width: 480px;
+  margin: 50px;
 }
 
 .ball {
@@ -21,8 +24,9 @@ body {
   display: inline-block;
   width: 75px;
   height: 75px;
-  border-radius: 50%;
   opacity: var(--opacity);
   transform: scale(var(--scale));
-  background-color: #0099ff;
+  margin: 0;
+  border: 0.5px solid #ddd;
+  border-radius: 50%;
 }
