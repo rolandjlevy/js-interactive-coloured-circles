@@ -1,6 +1,6 @@
 # ⚪🔴🔵 Interactive Circles 🔵🔴⚪
 
-A cool grid of interactive coloured circles that change size and opacity based on the position of the cursor.
+A cool grid of interactive coloured circles that change size and opacity based on the position of the cursor. Simply move your cursor over the grid to see the effect.
 
 ### Features 💡
 - Made with Vanilla JavaScript and CSS
