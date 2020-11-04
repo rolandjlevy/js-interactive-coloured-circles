@@ -1,5 +1,10 @@
 import Ball from '/src/Ball.js';
+import Utils from '/src/Utils.js';
 import Colours from '/src/Colours.js';
+import DarkMode from '/src/DarkMode.js';
+
+new Utils();
+new DarkMode();
 
 const colours = new Colours();
 
