@@ -1,6 +1,6 @@
-# ⚪🔴🔵 Fluid Grid of Circles 🔵🔴⚪
+# ⚪🔴🔵 Interactive Circles 🔵🔴⚪
 
-A fun grid of interactive coloured circles that change size and opacity based on the position of the cursor.
+A cool grid of interactive coloured circles that change size and opacity based on the position of the cursor.
 
 ### Features 💡
 - Made with Vanilla JavaScript and CSS
