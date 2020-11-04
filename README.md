@@ -9,6 +9,6 @@ A cool grid of interactive coloured circles that change size and opacity based o
 - Doesn't acheive anything - it's just a bit of fun! 😆
 
 ### Links 🔗
-- [PLAY THE DEMO](https://js-interactive-grid-of-morphing-balls.rolandjlevy.repl.co/)
-- [VIEW THE SOURCE CODE](https://repl.it/@RolandJLevy/js-interactive-grid-of-coloured-circles)
-- [EXPLORE THE GITHUB REPO]()
+- [PLAY THE DEMO](https://js-interactive-grid-of-coloured-circles.rolandjlevy.repl.co)
+- [VIEW THE SOURCE CODE](https://repl.it/@RolandJLevy/js-interactive-coloured-circles)
+- [EXPLORE THE GITHUB REPO](https://github.com/rolandjlevy/js-interactive-coloured-circles)
