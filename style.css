@@ -1,0 +1,28 @@
+body {
+  flex-direction: column;
+  background-color: #dce4e6;
+  height: 100vh;
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper {
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 640px;
+}
+
+.ball {
+  position: relative;
+  display: inline-block;
+  width: 75px;
+  height: 75px;
+  border-radius: 50%;
+  opacity: var(--opacity);
+  transform: scale(var(--scale));
+  background-color: #0099ff;
+}
