@@ -1,5 +1,8 @@
-export default class Ball {
+import Utils from './Utils.js';
+
+export default class Balls extends Utils {
   constructor() {
+    super();
   }
   init({id, colours, index}) {
     this.id = id;
@@ -13,6 +16,7 @@ export default class Ball {
   }
   addEventHook() {
     document.addEventListener('mousemove', (e) => {
+      e.preventDefault();
       this.morph(e, `#b${this.id}`);
     });
   }
@@ -35,7 +39,20 @@ export default class Ball {
     const y = Math.abs(ballY - e.clientY);
     return Math.sqrt(x * x + y * y);
   }
-  $(selector) {
-    return document.querySelector(selector);
+  addEventHookTouchmove() {
+    ['mousemove', 'touchmove'].forEach(event => {
+      document.addEventListener(event, (e) => {
+        e.preventDefault();
+        this.morph(e, `#b${this.id}`);
+      });
+   });
+  }
+  getNearnessTouchmove(evt, ballX, ballY) {
+    const e = evt.touches ? evt.touches[0] : evt;
+    const xPos = evt.touches ? e.offsetX - e.target.offsetLeft : e.clientX;
+    const yPos = evt.touches ? e.offsetY - e.target.offsetTop : e.clientY;
+    const x = Math.abs(ballX - xPos);
+    const y = Math.abs(ballY - yPos);
+    return Math.sqrt(x * x + y * y);
   }
 }

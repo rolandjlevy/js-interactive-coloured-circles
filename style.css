@@ -23,7 +23,7 @@ body.dark-mode {
   position: absolute;
   top: 0;
   max-width: 480px;
-  margin: 50px;
+  margin: 50px 0;
 }
 
 .ball {
@@ -34,7 +34,7 @@ body.dark-mode {
   opacity: var(--opacity);
   transform: scale(var(--scale));
   margin: 0;
-  border: 0.5px solid #ddd;
+  border: 0.5px solid #eee;
   border-radius: 50%;
 }
 
