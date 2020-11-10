@@ -39,7 +39,7 @@ export default class Balls extends Utils {
     const y = Math.abs(ballY - e.clientY);
     return Math.sqrt(x * x + y * y);
   }
-  addEventHookTouchmove() {
+  addEventHookMouseTouch() {
     ['mousemove', 'touchmove'].forEach(event => {
       document.addEventListener(event, (e) => {
         e.preventDefault();
