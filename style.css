@@ -4,6 +4,7 @@ body {
   transition: all 0.5s ease;
   height: 100vh;
   margin: 20px;
+  perspective: 25rem;
 }
 
 body.dark-mode {
@@ -24,6 +25,8 @@ body.dark-mode {
   top: 0;
   max-width: 480px;
   margin: 50px 0;
+  /* transform-style: preserve-3d;
+  transform: rotate3d(30deg); */
 }
 
 .ball {
@@ -32,6 +35,7 @@ body.dark-mode {
   width: 75px;
   height: 75px;
   opacity: var(--opacity);
+  /* transform: scale(var(--scale)) rotatex(-30deg); */
   transform: scale(var(--scale));
   margin: 0;
   border: 0.5px solid #eee;
