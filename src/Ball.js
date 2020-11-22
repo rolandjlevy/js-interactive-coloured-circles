@@ -7,10 +7,11 @@ export default class Balls extends Utils {
   init({id, colours, index}) {
     this.id = id;
     const div = document.createElement('div');
+    this.minSize = 0.15;
     div.id = `b${this.id}`;
     div.classList.add('ball')
-    div.style.setProperty('--scale', 0.15);
-    div.style.setProperty('--opacity', 0.15);
+    div.style.setProperty('--scale', this.minSize);
+    div.style.setProperty('--opacity', this.minSize);
     div.style.backgroundColor = `#${colours[index]}`;
     this.$('.wrapper').appendChild(div);
   }
@@ -24,7 +25,7 @@ export default class Balls extends Utils {
     const x = this.getOrigin(selector).x;
     const y = this.getOrigin(selector).y;
     let n = this.getNearness(e, x, y);
-    const result = (140 - n)/100 <= 0.15 ? 0.15 : (140 - n)/100;
+    const result = (140 - n)/100 <= this.minSize ? this.minSize : (140 - n)/100;
     this.$(selector).style.setProperty('--scale', result);
     this.$(selector).style.setProperty('--opacity', result);
   }
