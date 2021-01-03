@@ -1,6 +1,7 @@
 import Ball from '/src/Ball.js';
 import Colours from '/src/Colours.js';
 import DarkMode from '/src/DarkMode.js';
+import Utils from './src/Utils.js';
 
 new DarkMode();
 
@@ -13,3 +14,6 @@ ids.forEach((id, index) => {
   ball.init({id, colours:colours.array, index});
   ball.addEventHook();
 });
+
+const utils = new Utils();
+utils.$('#year').textContent = new Date().getFullYear();
