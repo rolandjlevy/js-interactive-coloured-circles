@@ -1,7 +1,10 @@
 export default class UI {
   constructor() {
   }
-  static $(selector) {
-    return document.querySelector(selector);
+  static $(el) {
+    return document.querySelector(el);
+  }
+  static $$(el) {
+    return document.querySelectorAll(el);
   }
 }
