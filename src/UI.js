@@ -1,7 +1,7 @@
-export default class Utils {
+export default class UI {
   constructor() {
   }
-  $(selector) {
+  static $(selector) {
     return document.querySelector(selector);
   }
 }

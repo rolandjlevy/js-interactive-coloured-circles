@@ -1,8 +1,7 @@
-import Utils from './Utils.js';
+import UI from './UI.js';
 
-export default class Balls extends Utils {
+export default class Balls {
   constructor() {
-    super();
   }
   init({id, colours, index}) {
     this.id = id;
@@ -13,7 +12,7 @@ export default class Balls extends Utils {
     div.style.setProperty('--scale', this.minSize);
     div.style.setProperty('--opacity', this.minSize);
     div.style.backgroundColor = `#${colours[index]}`;
-    this.$('.wrapper').appendChild(div);
+    UI.$('.wrapper').appendChild(div);
   }
   addEventHook() {
     document.addEventListener('mousemove', (e) => {
@@ -26,11 +25,11 @@ export default class Balls extends Utils {
     const y = this.getOrigin(selector).y;
     let n = this.getNearness(e, x, y);
     const result = (140 - n)/100 <= this.minSize ? this.minSize : (140 - n)/100;
-    this.$(selector).style.setProperty('--scale', result);
-    this.$(selector).style.setProperty('--opacity', result);
+    UI.$(selector).style.setProperty('--scale', result);
+    UI.$(selector).style.setProperty('--opacity', result);
   }
   getOrigin(selector) {
-    const { top, right, bottom, left } = this.$(selector).getBoundingClientRect();
+    const { top, right, bottom, left } = UI.$(selector).getBoundingClientRect();
     const x = (right - left) / 2 + left;
     const y = (bottom - top) / 2 + top;
     return { x, y };

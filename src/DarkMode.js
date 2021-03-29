@@ -1,17 +1,16 @@
-import Utils from './Utils.js';
+import UI from './UI.js';
 
-export default class DarkMode extends Utils {
+export default class DarkMode {
   constructor() {
-    super();
     this.init();
   }
   init() {
-    this.$('.mode-toggle').addEventListener('click', (e) => {
-      this.$('body').classList.toggle('dark-mode');
-      this.$('.mode-toggle').textContent = this.darkMode() ? '🌖' : '🌒';
+    UI.$('.mode-toggle').addEventListener('click', (e) => {
+      UI.$('body').classList.toggle('dark-mode');
+      UI.$('.mode-toggle').textContent = this.darkMode() ? '🌖' : '🌒';
     });
   }
   darkMode() {
-    return this.$('body').classList.value.includes('dark-mode');
+    return UI.$('body').classList.value.includes('dark-mode');
   }
 }
