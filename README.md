@@ -10,6 +10,5 @@ A cool grid of interactive coloured circles that change size and opacity based o
 - This doesn't achieve anything - it's just a bit of fun! 😆
 
 ### Links 🔗
-- [PLAY THE DEMO](https://js-interactive-grid-of-coloured-circles.rolandjlevy.repl.co)
-- [VIEW THE SOURCE CODE](https://repl.it/@RolandJLevy/js-interactive-coloured-circles)
-- [EXPLORE THE GITHUB REPO](https://github.com/rolandjlevy/js-interactive-coloured-circles)
+- [PLAY THE DEMO](https://js-interactive-coloured-circles.vercel.app)
+- [VIEW THE SOURCE CODE](https://github.com/rolandjlevy/js-interactive-coloured-circles)
